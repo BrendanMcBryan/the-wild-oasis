@@ -11,7 +11,7 @@ export function useBooking() {
     // eslint-disable-next-line no-unused-vars
     error,
   } = useQuery({
-    queryKey: ['booking'],
+    queryKey: ['booking', bookingId],
     queryFn: () => getBooking(bookingId),
     retry: false,
   });
