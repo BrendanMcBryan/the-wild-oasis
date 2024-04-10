@@ -28,7 +28,7 @@ function CabinTable() {
   const sortBy = searchParams.get('sortBy') || 'regularPrice-asc';
   const [field, direction] = sortBy.split('-');
   const modifier = direction === 'asc' ? 1 : -1;
-  console.log(field, direction, modifier);
+  // console.log(field, direction, modifier);
   // eslint-disable-next-line no-unused-vars
   const sortedCabins = filteredCabins.sort(
     (a, b) => (a[field] - b[field]) * modifier

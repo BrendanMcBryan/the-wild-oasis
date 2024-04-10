@@ -13,6 +13,7 @@ import ConfirmDelete from '../../ui/ConfirmDelete.jsx';
 import { useMoveBack } from '../../hooks/useMoveBack';
 import { useBooking } from './useBooking';
 import Spinner from '../../ui/Spinner';
+import Empty from '../../ui/Empty';
 
 import { useNavigate } from 'react-router-dom';
 // eslint-disable-next-line no-unused-vars
@@ -37,6 +38,8 @@ function BookingDetail() {
   const moveBack = useMoveBack();
 
   if (isLoading) return <Spinner />;
+
+  if (!booking) return <Empty resourceName="booking" />;
 
   const { status, id: bookingId } = booking;
 
