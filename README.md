@@ -1,4 +1,8 @@
-# React + Vite
+# The Wild Oasis
+
+#### Main Project in Ultimate React Course avaiable at [Udemy](https://www.udemy.com/course/the-ultimate-react-course/)
+
+## React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
